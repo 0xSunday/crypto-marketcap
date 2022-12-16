@@ -5,7 +5,7 @@ const CoinList = (props) => {
   const { items } = props;
 
   return (
-    <ul className="flex flex-col w-full p-5 sm:p-10 ">
+    <ul className="flex flex-col w-full p-5 sm:p-10  ">
       <div className="flex flex-row sm:justify-between justify-between py-2 ">
         <p className=" w-full ml-14">Name</p>
         <p className=" w-full text-center sm:text-start sm:-ml-8 ">price</p>

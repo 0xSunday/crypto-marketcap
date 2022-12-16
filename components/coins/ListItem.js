@@ -11,18 +11,18 @@ const ListItem = (props) => {
 
   const exploreLink = `/coins/${id}`;
   return (
-    <li className="flex flex-row items-center p-2 justify-center w-full border-b-2 border-b-black">
-      <div className="flex flex-row w-full ">
+    <li className="flex flex-row items-center py-3 justify-center w-full border-b-2 border-b-black ">
+      <div className="flex flex-row w-full items-center ">
         <img
           src={image}
           alt={title}
-          className="w-10 h-10 justify-center items-center"
+          className="w-7 h-7 sm:w-10 sm:h-10 justify-center items-center"
         />
 
-        <h3 className="px-2 text-2xl font-semibold">{title}</h3>
+        <h3 className="px-2 sm:text-2xl text-xl font-semibold flex items-center">{title}</h3>
       </div>
       <div className="w-full justify-end sm:justify-start text-end sm:text-start">
-        <h3 className="px-2 text-2xl font-semibold">${price}</h3>
+        <h3 className="px-2 sm:text-2xl text-xl font-semibold">${price}</h3>
       </div>
       <div className="w-full hidden md:block">
         <h3 className={`px-2 text-2xl font-semibold`}>
