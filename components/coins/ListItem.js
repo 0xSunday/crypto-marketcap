@@ -12,11 +12,11 @@ const ListItem = (props) => {
   const exploreLink = `/coins/${id}`;
   return (
     <li className={classes.item}>
-      <img src={image} alt={title}  />
+      <img src={image} alt={title} />
 
       <div className={classes.content}>
         <div className={classes.summary}>
-          <h2>{title}</h2>
+          <h2 className="text-2xl font-semibold font-poppins ">{title}</h2>
           <div className={classes.date}>
             <div>
               <p>Price</p>

@@ -6,7 +6,7 @@ function MainHeader() {
   return (
     <header className={classes.header}>
       <div className={classes.logo}>
-        <Link href="/">Crypto Gecko</Link>
+        <Link href="/">Crypto MarketCap</Link>
       </div>
       <nav className={classes.navigation}>
         <Link className={classes.link} href="/coins">
