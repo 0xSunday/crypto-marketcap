@@ -1,26 +1,43 @@
 import Link from "next/link";
 import React from "react";
-import Button from "../ui/button";
+// import Button from "../ui/button";
 import classes from "./ListItem.module.css";
 
 import Image from "next/image";
-import { AiOutlineArrowRight } from "react-icons/ai";
 
 const ListItem = (props) => {
-  const { id, title, price, marketCap, image } = props;
+  const { id, title, price, marketCap, image, price_change_percentage_24h } =
+    props;
 
   const exploreLink = `/coins/${id}`;
   return (
-    <li className={classes.item}>
-      <img src={image} alt={title} />
+    <li className="flex flex-row items-center p-2 justify-center w-full border-b-2 border-b-black">
+      <div className="flex flex-row w-full ">
+        <img
+          src={image}
+          alt={title}
+          className="w-10 h-10 justify-center items-center"
+        />
 
-      <div className={classes.content}>
+        <h3 className="px-2 text-2xl font-semibold">{title}</h3>
+      </div>
+      <div className="w-full justify-end sm:justify-start text-end sm:text-start">
+        <h3 className="px-2 text-2xl font-semibold">${price}</h3>
+      </div>
+      <div className="w-full hidden md:block">
+        <h3 className={`px-2 text-2xl font-semibold`}>
+          {price_change_percentage_24h}
+        </h3>
+      </div>
+      <div className="hidden sm:block w-full">
+        <h3 className="px-2 text-2xl font-semibold">${marketCap}</h3>
+      </div>
+
+      {/* <div className={classes.content}>
         <div className={classes.summary}>
           <h2 className="text-2xl font-semibold font-poppins ">{title}</h2>
           <div className={classes.date}>
-            <div>
-              <p>Price</p>
-            </div>
+            <div></div>
             <div>
               <h4>${price}</h4>
             </div>
@@ -41,7 +58,7 @@ const ListItem = (props) => {
             <AiOutlineArrowRight className={classes.icon} />
           </Button>
         </div>
-      </div>
+      </div> */}
     </li>
   );
 };
