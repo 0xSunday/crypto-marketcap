@@ -1,18 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
+import React from "react";
+import classes from "../styles/Home.module.css";
+import CoinList from "../components/coins/CoinList";
+import { getFeaturedEvents } from "../dummyData";
+const Home = () => {
+  const featuredCoins = getFeaturedEvents();
 
-import styles from "../styles/Home.module.css";
-
-export default function Home() {
   return (
-    <div className="flex bg-blue-400 flex-col">
-      <h1 className="text-3xl underline font-bold">hello sunil</h1>
-      <p>this is sunil</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nulla ipsum
-        porro modi omnis, voluptatibus repellat nemo, eius quaerat provident qui
-        sapiente explicabo, sunt iste quia praesentium aspernatur? Hic, magnam.
-      </p>
+    <div className={classes.homepage}>
+      <CoinList items={featuredCoins} />
     </div>
   );
-}
+};
+
+export default Home;

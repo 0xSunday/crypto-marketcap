@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import classes from "../../styles/Home.module.css";
 
-const index = () => {
+import CoinList from "../../components/coins/CoinList";
+import { getAllEvents } from "../../dummyData";
+const Coins = () => {
+  const allCoins = getAllEvents();
+
   return (
-    <div>index</div>
-  )
-}
+    <div className={classes.homepage}>
+      <CoinList items={allCoins} />
+    </div>
+  );
+};
 
-export default index
+export default Coins;
