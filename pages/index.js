@@ -7,7 +7,7 @@ import Search from "../components/layout/Search";
 import { data } from "../components/layout/mainHeader";
 const Home = ({ filterdApiCoins }) => {
   const [search, setSearch] = useState("");
-  const featuredCoins = getFeaturedEvents();
+  // const featuredCoins = getFeaturedEvents();
 
   const allCoins = filterdApiCoins.filter((coin) =>
     coin.name.toLowerCase().includes(search.toLowerCase())
@@ -19,12 +19,12 @@ const Home = ({ filterdApiCoins }) => {
     setSearch(e.target.value.toLowerCase());
   };
 
-  let searchIcon = false;
+  // let searchIcon = false;
 
   return (
     <div className={classes.homepage}>
       {/* <div className="bg-black text-white "> */}
-      <Search onChage={handleChnage} />
+      <Search onChange={handleChnage} />
       {/* <CoinList items={featuredCoins} /> */}
       <CoinList items={allCoins} />
     </div>
