@@ -3,15 +3,29 @@ import classes from "../styles/Home.module.css";
 import CoinList from "../components/coins/CoinList";
 import { getFeaturedEvents } from "../dummyData";
 import Search from "../components/layout/Search";
+
+import { data } from "../components/layout/mainHeader";
 const Home = ({ filterdApiCoins }) => {
-  const [search, setSearch] = useState(false);
+  const [search, setSearch] = useState("");
   const featuredCoins = getFeaturedEvents();
+
+  const allCoins = filterdApiCoins.filter((coin) =>
+    coin.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const handleChnage = (e) => {
+    e.preventDefault();
+
+    setSearch(e.target.value.toLowerCase());
+  };
+
+  let searchIcon = false;
 
   return (
     <div className={classes.homepage}>
-      {search && <Search />}
+      <Search onChange={handleChnage} />
       {/* <CoinList items={featuredCoins} /> */}
-      <CoinList items={filterdApiCoins} />
+      <CoinList items={allCoins} />
     </div>
   );
 };

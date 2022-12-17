@@ -34,33 +34,6 @@ const ListItem = (props) => {
       <div className="hidden sm:block w-full">
         <h3 className="px-2 text-2xl font-semibold">${marketCap}</h3>
       </div>
-
-      {/* <div className={classes.content}>
-        <div className={classes.summary}>
-          <h2 className="text-2xl font-semibold font-poppins ">{title}</h2>
-          <div className={classes.date}>
-            <div></div>
-            <div>
-              <h4>${price}</h4>
-            </div>
-          </div>
-
-          <div className={classes.address}>
-            <div>
-              <p>Market Cap</p>
-            </div>
-            <div>
-              <h4>${marketCap}</h4>
-            </div>
-          </div>
-        </div>
-        <div className={classes.actions}>
-          <Button link={exploreLink} className={classes.Button}>
-            Explore
-            <AiOutlineArrowRight className={classes.icon} />
-          </Button>
-        </div>
-      </div> */}
     </li>
   );
 };
