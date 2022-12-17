@@ -31,7 +31,7 @@ const Coin = ({ coin }) => {
         marketCap={coin.market_data.market_cap.usd}
         circulatingSupply={coin.market_data.circulating_supply}
         totalSupply={coin.market_data.total_supply}
-        website={coin.links.homepage}
+        website={coin.links.homepage[0]}
         image={coin.image.small}
         explorer={coin.links.blockchain_site[0]}
         high24={coin.market_data.high_24h.usd}

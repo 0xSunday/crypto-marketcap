@@ -54,7 +54,7 @@ const CoinDetailsPage = (props) => {
         <div className=" hidden md:flex flex-col">
           <div className="  md:flex flex-wrap justify-start ">
             <a
-              href={` /${website}`}
+              href={website}
               className=" bg-gray flex items-center justify-center hover:bg-slate-500 bg-slate-400 rounded-3xl p-2 m-2 border border-black  "
             >
               <AiOutlineLink className="mr-1" /> Website
@@ -134,14 +134,14 @@ const CoinDetailsPage = (props) => {
         <div className=" flex md:hidden flex-col my-5">
           <div className="  ">
             <a
-              href={` /${website}`}
+              href={website}
               className=" bg-gray flex items-center justify-center hover:bg-slate-500 bg-slate-400 rounded-3xl p-2 m-2 border border-black  "
             >
               <AiOutlineLink className="mr-1" /> Website
             </a>
 
             <a
-              href={` /${website}`}
+              href={explorer}
               className=" bg-gray flex items-center justify-center hover:bg-slate-500 bg-slate-400 rounded-3xl p-2 m-2 border border-black  "
             >
               <FiSearch className="mr-1" /> Explorer
