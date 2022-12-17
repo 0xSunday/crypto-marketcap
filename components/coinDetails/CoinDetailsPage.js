@@ -1,9 +1,7 @@
-import classes from "./CoinDetailsPage.module.css";
 import React, { useState } from "react";
-import Image from "next/image";
-import styles from "../../Styles";
 import { AiOutlineLink } from "react-icons/ai";
 
+import ReactHtmlParse from "html-react-parser";
 import { FiSearch } from "react-icons/fi";
 
 const CoinDetailsPage = (props) => {
@@ -121,9 +119,14 @@ const CoinDetailsPage = (props) => {
             About {title}
           </h1>
           <p className="font-poppins font-normal text-black text-[18px] leading-[30.8px]  ">
-            {showMore ? description : `${description.substring(0, 500)}`}
-            <button className="font-bold" onClick={() => setShowMore(!showMore)}>
-            {showMore ? "Show less" : "Show more"}
+            {showMore
+              ? ReactHtmlParse(description)
+              : ReactHtmlParse(`${description.substring(0, 500)}`)}
+            <button
+              className="font-bold "
+              onClick={() => setShowMore(!showMore)}
+            >
+              {showMore ? " Show less" : "..  Show more"}
             </button>
           </p>
         </div>

@@ -10,6 +10,7 @@ const Coin = ({ coin }) => {
 
   // const coin = getEventById(coinId);
 
+
   if (!coin) {
     return (
       // <ErrorAlert>
