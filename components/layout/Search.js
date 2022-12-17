@@ -6,10 +6,10 @@ const Search = ({ ...rest }) => {
       <input
         type="text"
         placeholder="Bitcoin"
-        className="border-2 border-black p-1 "
+        className="border-2 border-black p-1 border-r-0  "
         {...rest}
       />
-      <button className="p-1 border-2 border-black border-l-0 px-3">
+      <button className="p-1 border-2 border-black border-l-0 px-3 bg-slate-300 ">
         <BiSearchAlt2 className="w-6 h-6" />
       </button>
     </div>

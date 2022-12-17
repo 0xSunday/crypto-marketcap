@@ -23,7 +23,8 @@ const Home = ({ filterdApiCoins }) => {
 
   return (
     <div className={classes.homepage}>
-      <Search onChange={handleChnage} />
+      {/* <div className="bg-black text-white "> */}
+      <Search onChage={handleChnage} />
       {/* <CoinList items={featuredCoins} /> */}
       <CoinList items={allCoins} />
     </div>
@@ -36,8 +37,6 @@ export const getServerSideProps = async () => {
   );
 
   const filterdApiCoins = await res.json();
-
-  console.log(filterdApiCoins);
 
   return {
     props: {
