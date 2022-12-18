@@ -34,14 +34,14 @@ const CoinDetailsPage = (props) => {
   return (
     <section className="md:py-16 py-6 md:px-16 px-6 flex flex-col md:flex-row w-full flex-wrap justify-between items-baseline">
       <div className="md:w-[20%] w-[100%] items-center">
-        <div className="flex flex-col ">
-          <div className="flex items-center ">
+        <div className="flex flex-col  ">
+          <div className="flex items-center pb-2 ">
             <img
               src={image}
               alt={title}
               className="mr-2 w-10 h-10 -pl-1 md:pl-0"
             />
-            <h1 className="font-poppins font-semibold xs:text-[40px] text-[25px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
+            <h1 className="font-poppins font-semibold xs:text-[40px] text-[25px] text-white  w-full">
               {`${title} (${shotName})`}
             </h1>
           </div>
@@ -69,8 +69,6 @@ const CoinDetailsPage = (props) => {
           </div>
         </div>
       </div>
-
-
 
       <div className="flex-col md:w-[30%] w-[100%] mb-5 items-center ">
         <div className="flex flex-row items-center">
@@ -134,7 +132,7 @@ const CoinDetailsPage = (props) => {
         </div>
 
         <div className=" flex md:hidden flex-col mt-5 ">
-          <div >
+          <div>
             <a
               href={website}
               className=" bg-gray flex items-center justify-center hover:bg-stone-900 bg-black rounded-3xl p-2 m-2 border border-white  "
