@@ -12,7 +12,7 @@ const ListItem = (props) => {
   const exploreLink = `/coins/${id}`;
   return (
     <Link href={exploreLink}>
-      <li className="flex flex-row items-center py-3 px-3 justify-center w-full border-b-2 border-b-black  hover:bg-black rounded-3xl ">
+      <li className="flex flex-row items-center py-4 px-3 justify-center w-full border-b-2 border-b-black  hover:bg-black rounded-3xl ">
         <div className="flex flex-row w-full items-center ">
           <img
             src={image}
