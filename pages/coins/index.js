@@ -21,7 +21,7 @@ const Home = ({ filterdApiCoins }) => {
   // let searchIcon = false;
 
   return (
-    <div className={classes.homepage}>
+    <div className={`${classes.homepage} bg-zinc-900 text-white `}>
       {/* <div className="bg-black text-white "> */}
       <Search onChange={handleChnage} />
       {/* <CoinList items={featuredCoins} /> */}

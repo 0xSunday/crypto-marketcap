@@ -23,7 +23,7 @@ function MainHeader() {
       <nav className={classes.navigation}>
         <ul>
           <li>
-            <Link href="/coins">All Coins</Link>i
+            <Link href="/coins">All Coins</Link>
           </li>
         </ul>
       </nav>

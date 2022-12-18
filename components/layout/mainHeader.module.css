@@ -10,21 +10,19 @@
 
 .logo {
   font-size: 1.5rem;
-  color: white;
+  color: yellow;
   font-family: "Fira", sans-serif;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #94fdfd;
 }
 .icon {
   margin-left: 5px;
 }
 .link {
   font-size: 1.5rem;
- 
-  
+
   display: flex;
   align-items: center;
   align-items: center;
@@ -34,13 +32,10 @@
   color: #94fdfd;
 }
 .navigation {
-  
-
   align-items: center;
   justify-content: center;
 }
 .navigation a {
- 
   text-decoration: none;
   list-style-type: none;
   color: #74dacc;
