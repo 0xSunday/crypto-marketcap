@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineLink } from "react-icons/ai";
 
 import ReactHtmlParse from "html-react-parser";
@@ -31,6 +31,7 @@ const CoinDetailsPage = (props) => {
 
   const priceChangePercentage24hF =
     Math.round(priceChangePercentage24h * Math.pow(10, 2)) / Math.pow(10, 2);
+
   return (
     <section className="md:py-16 py-6 md:px-16 px-6 flex flex-col md:flex-row w-full flex-wrap justify-between items-baseline">
       <div className="md:w-[20%] w-[100%] items-center">

@@ -21,11 +21,10 @@ function MainHeader() {
         <Link href="/">Crypto MarketCap</Link>
       </div>
       <nav className={classes.navigation}>
-        <ul>
-          <li>
-            <Link href="/coins">All Coins</Link>
-          </li>
-        </ul>
+        <select varient="outlined" className="bg-black text-white p-1 border-[1px] rounded-xl border-white">
+          <option value="A">USD</option>
+          <option value="B">INR</option>
+        </select>
       </nav>
     </header>
   );
